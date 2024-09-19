@@ -1,0 +1,50 @@
+/* Estiliza a tabela inteira */
+.table-view {
+    -fx-background-color: transparent; /* Remove o fundo da tabela */
+    -fx-border-width: 0; /* Remove a borda ao redor da tabela */
+}
+
+/* Estiliza os cabeçalhos das colunas */
+.table-view .column-header {
+    -fx-background-color: #3CF29C; /* Cor de fundo dos cabeçalhos */
+    -fx-text-fill: #fff; /* Cor do texto dos cabeçalhos */
+    -fx-font-weight: bold; /* Torna o texto dos cabeçalhos em negrito */
+    -fx-font-family: "Century Gothic"; /* Fonte dos cabeçalhos */
+    -fx-font-size: 12px; /* Tamanho da fonte dos cabeçalhos */
+    -fx-padding: 5px; /* Padding nos cabeçalhos */
+}
+
+/* Estiliza as linhas da tabela */
+.table-view .table-row-cell {
+    -fx-background-color: #fff; /* Cor de fundo das linhas */
+    -fx-border-color: #e0e0e0; /* Cor da borda das células */
+    -fx-border-width: 0 0 1px 0; /* Borda inferior fina */
+}
+
+/* Estiliza as linhas selecionadas */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #f0f0f0; /* Cor de fundo das linhas selecionadas */
+    -fx-border-color: #d0d0d0; /* Cor da borda das células selecionadas */
+}
+
+/* Estiliza o texto das células da linha selecionada */
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: #000; /* Força a cor do texto das células selecionadas para preto */
+    -fx-font-weight: bold; /* Texto em negrito nas células selecionadas */
+}
+
+/* Estiliza as células da tabela */
+.table-view .table-cell {
+    -fx-padding: 4px 8px; /* Padding interno das células */
+    -fx-border-color: transparent; /* Remove a borda das células não selecionadas */
+    -fx-border-width: 0; /* Remove a borda das células não selecionadas */
+    -fx-border-style: solid; /* Define o estilo da borda */
+    -fx-border-color: #d0d0d0; /* Cor das bordas entre células */
+    -fx-border-width: 0 0 1px 1px; /* Adiciona bordas finas e pequenas entre as células */
+}
+
+/* Remove a borda das linhas da tabela */
+.table-view .table-row-cell:filled {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}

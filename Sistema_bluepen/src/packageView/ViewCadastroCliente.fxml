@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="675.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.ControllerCadastroCliente">
+   <children>
+      <BorderPane layoutX="275.0" layoutY="150.0" prefHeight="600.0" prefWidth="202.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="698.0" AnchorPane.topAnchor="0.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="704.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <FlowPane columnHalignment="CENTER" layoutX="21.0" layoutY="112.0" prefHeight="42.0" prefWidth="662.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="128.0" text="Dados do cliente">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <Line endX="-100.00003051757812" endY="35.59999084472656" startX="554.0928955078125" startY="35.599998474121094" strokeMiterLimit="25.0">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </Line>
+               </children>
+            </FlowPane>
+            <Button fx:id="btnSalvar" contentDisplay="RIGHT" layoutX="479.0" layoutY="541.0" mnemonicParsing="false" onAction="#btnSalvar" style="-fx-background-color: #C7C3C3;" text="Salvar" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../packageMedias/material-symbols_check-rounded.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCancelar" contentDisplay="RIGHT" layoutX="558.0" layoutY="541.0" mnemonicParsing="false" onAction="#btnCancelar" style="-fx-background-color: #C7C3C3;" text="Cancelar" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../packageMedias/typcn_delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <GridPane layoutX="239.0" layoutY="351.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="E-mail">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="txtEmail" prefHeight="26.0" prefWidth="0.0" promptText="Digite o e-mail" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="471.0" layoutY="351.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="Tipo">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="cbTipo" prefHeight="17.0" prefWidth="203.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="20.0" layoutY="351.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="158.0" text="Data de nascimento">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="DtDataNascimento" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="20.0" layoutY="258.0" prefHeight="86.0" prefWidth="426.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="Endereço">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="txtEndereco" prefHeight="26.0" prefWidth="0.0" promptText="Digite o endereço" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="550.0" startX="-100.0" strokeWidth="0.5" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="20.0" layoutY="164.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="Nome">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="txtNome" prefHeight="26.0" prefWidth="0.0" promptText="Digite o nome" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="239.0" layoutY="164.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="CPF">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="txtCPF" prefHeight="26.0" prefWidth="0.0" promptText="Digite o CPF" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="471.0" layoutY="164.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="141.0" text="Telefone">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="txtTelefone" prefHeight="26.0" prefWidth="0.0" promptText="Digite o telefone" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Pane prefHeight="77.0" prefWidth="704.0" style="-fx-background-color: #1D1822;">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="113.0" layoutX="302.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../packageMedias/LOGO.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <GridPane layoutX="20.0" layoutY="467.0" prefHeight="85.0" prefWidth="202.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="2.21431827545166" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="34.0" prefWidth="206.0" text="Data da 1° compra">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <Line endX="64.46470642089844" endY="-11.235139846801758" startX="-137.2281494140625" startY="-12.128089904785156" stroke="#737171" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="DtDataPrim" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.ControllerLogin">
+   <children>
+      <Pane layoutX="437.0" prefHeight="624.0" prefWidth="462.0">
+         <children>
+            <GridPane layoutX="90.0" layoutY="112.0" prefHeight="400.0" prefWidth="282.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="59.4" minHeight="10.0" prefHeight="51.79998779296875" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="47.000024414062494" minHeight="10.0" prefHeight="47.000024414062494" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="27.199981689453125" minHeight="6.199999999999989" prefHeight="7.000018310546864" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.19999999999999" minHeight="10.0" prefHeight="39.20000610351562" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="23.79999389648438" minHeight="0.5999816894531307" prefHeight="9.5999755859375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="105.60000000000002" minHeight="10.0" prefHeight="104.00002441406252" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <FlowPane alignment="CENTER" prefHeight="54.0" prefWidth="118.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" text="Olá, faça seu" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Calibri Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="66.0" text="login!" textAlignment="JUSTIFY" textFill="#3cf29c">
+                           <font>
+                              <Font name="Calibri Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </FlowPane>
+                  <Label prefHeight="22.0" prefWidth="286.0" text="Usuário" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUser" prefHeight="40.0" prefWidth="206.0" promptText="Digite seu usuário" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="2">
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Label prefHeight="22.0" prefWidth="297.0" text="Senha" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Group GridPane.rowIndex="6">
+                     <children>
+                        <TextField fx:id="txtSenha" prefHeight="40.0" prefWidth="252.0" style="-fx-background-color: transparent;" visible="false" />
+                        <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="252.0" promptText="Digite sua senha" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Group>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnButtonLogin" prefHeight="54.0" prefWidth="206.0" style="-fx-background-color: #3CF29C;" text="LOGIN" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" startX="-182.59967041015625" strokeLineCap="ROUND" GridPane.rowIndex="3" />
+                  <Line endX="100.0" layoutX="192.0" layoutY="163.0" startX="-182.59967041015625" strokeLineCap="ROUND" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" layoutX="138.0" layoutY="502.0" prefHeight="46.0" prefWidth="186.0" text="Desenvolvido por Arthur Lima ©" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Calibri Bold" size="11.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="VerSenha" layoutX="366.0" layoutY="367.0" mnemonicParsing="false" onAction="#visualizarSenha" style="-fx-background-color: #3CF29C;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../packageMedias/Eye%20off.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </Pane>
+      <Pane prefHeight="624.0" prefWidth="439.0">
+         <children>
+            <ImageView fitHeight="624.0" fitWidth="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageMedias/FUNDO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageMedias/LOGO2X.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

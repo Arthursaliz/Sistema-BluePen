@@ -1,0 +1,70 @@
+/* Estilo para o ChoiceBox */
+.choice-box {
+    -fx-padding: 5px;
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+/* Estilo para a caixa de entrada do ChoiceBox */
+.choice-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+}
+
+/* Estilo para a célula selecionada */
+.choice-box .list-cell:filled:selected, .choice-box .list-cell:filled:selected:hover {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Remover borda ao focar */
+.choice-box:focused {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+/* Estilo para o botão da ChoiceBox */
+.choice-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+/* Ícone do botão da ChoiceBox */
+.choice-box .arrow-button .arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "M0 0 L5 5 L10 0";
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-stroke: #333;
+    -fx-stroke-width: 2px;
+}
+
+/* Estilo para o menu popup */
+.choice-box-popup {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+/* Estilo para os itens no menu popup */
+.choice-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+}
+
+/* Estilo para o item selecionado no menu popup */
+.choice-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
