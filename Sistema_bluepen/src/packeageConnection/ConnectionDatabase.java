@@ -53,8 +53,8 @@ public class ConnectionDatabase {
 	}
 	
 	
-	public static void closeConnection(Connection con, PreparedStatement stmt, ResultSet rs ) {
-		closeConnection(con,stmt);
+	public static void closeConnection(Connection conexao, PreparedStatement stmt, ResultSet rs ) {
+		closeConnection(conexao,stmt);
 		
 		try {
 			if(rs != null) {
