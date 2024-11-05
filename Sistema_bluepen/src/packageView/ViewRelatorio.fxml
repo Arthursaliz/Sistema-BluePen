@@ -230,8 +230,8 @@
             <TableView fx:id="tableViewRelatorioVenda" layoutX="14.0" layoutY="205.0" prefHeight="382.0" prefWidth="656.0" stylesheets="@../packageResources/style.css">
               <columns>
                   <TableColumn fx:id="ColumID" prefWidth="58.4000244140625" text="ID" />
-                  <TableColumn fx:id="ColumVendedor" minWidth="1.60003662109375" prefWidth="125.5999755859375" text="Vendedor" />
-                  <TableColumn fx:id="ColumCliente" minWidth="1.60003662109375" prefWidth="142.4000244140625" text="Cliente" />
+                  <TableColumn fx:id="ColumVendedor" minWidth="1.60003662109375" prefWidth="125.5999755859375" text="Cliente" />
+                  <TableColumn fx:id="ColumCliente" minWidth="1.60003662109375" prefWidth="142.4000244140625" text="Vendedor" />
                   <TableColumn fx:id="ColumProduto" minWidth="0.0" prefWidth="132.79998779296875" text="Produto" />
                   <TableColumn fx:id="ColumQuantidade" minWidth="0.0" prefWidth="107.20001220703125" text="Quantidade" />
                   <TableColumn fx:id="ColumPrecoTotal" minWidth="1.60003662109375" prefWidth="93.5999755859375" text="Preço total" />

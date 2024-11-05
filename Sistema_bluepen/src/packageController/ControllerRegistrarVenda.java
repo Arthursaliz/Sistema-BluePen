@@ -163,17 +163,15 @@ public class ControllerRegistrarVenda implements Initializable {
 		txtNomeVendedor.setText(ControllerLogin.vendedor.getNome());
 		txtIDVendedor.setText(ControllerLogin.vendedor.getIdVendedor());
 		txtQuantidadeProduto.setText("0");
-	
+
 		tblPesquisarProduto.setOnMouseClicked((MouseEvent clique) -> {
-		if(clique.getClickCount() == 2) {
-			int i = tblPesquisarProduto.getSelectionModel().getSelectedIndex();
-			produto = tblPesquisarProduto.getItems().get(i);
-			txtCodigoProduto.setText(produto.getCodigo());
-			txtPrecoUnitario.setText(produto.getPrecoUnit());
-			txtPesquisarProduto.setText(produto.getNome());
-		}
-		
-		
+			if (clique.getClickCount() == 2) {
+				int i = tblPesquisarProduto.getSelectionModel().getSelectedIndex();
+				produto = tblPesquisarProduto.getItems().get(i);
+				txtCodigoProduto.setText(produto.getCodigo());
+				txtPrecoUnitario.setText(produto.getPrecoUnit());
+				txtPesquisarProduto.setText(produto.getNome());
+			}
 		});
 	}
 

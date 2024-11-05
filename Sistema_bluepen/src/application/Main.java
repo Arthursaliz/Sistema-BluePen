@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -86,7 +87,9 @@ public class Main extends Application {
 			Parent fxmlRegistrarVenda = FXMLLoader.load(getClass().getResource("/packageView/ViewRegistrarVenda.fxml"));
 			RegistrarVenda = new Scene(fxmlRegistrarVenda);
 
+			stage.getIcons().add(new Image(getClass().getResourceAsStream("/packageMedias/ICONE.png")));		
 			primaryStage.setScene(Login);
+			primaryStage.setResizable(false);
 			primaryStage.show();
 
 		} catch (Exception e) {
@@ -142,6 +145,7 @@ public class Main extends Application {
 		Parent TelaHOme = fxmlHome.load();
 		Home = new Scene(TelaHOme);
 		stage.setScene(Home);
+		stage.setResizable(false);
 		stage.show();
 		
 	}
@@ -156,6 +160,7 @@ public class Main extends Application {
 		CadProduto.initModality(Modality.WINDOW_MODAL);
 		CadProduto.setScene(scene1);
 		CadProduto.centerOnScreen();
+		CadProduto.setResizable(false);
 		CadProduto.showAndWait();
 
 	}
@@ -171,7 +176,9 @@ public class Main extends Application {
 		CadVendedor.initModality(Modality.WINDOW_MODAL);
 		CadVendedor.setScene(scene6);
 		CadVendedor.centerOnScreen();
+		CadVendedor.setResizable(false);
 		CadVendedor.showAndWait();
+		
 
 	}
 
@@ -186,6 +193,7 @@ public class Main extends Application {
 		CadProduto.initModality(Modality.WINDOW_MODAL);
 		CadProduto.setScene(scene2);
 		CadProduto.centerOnScreen();
+		CadProduto.setResizable(false);
 		CadProduto.showAndWait();
 
 	}
@@ -201,6 +209,7 @@ public class Main extends Application {
 		RegistroVenda.initModality(Modality.WINDOW_MODAL);
 		RegistroVenda.setScene(scene3);
 		RegistroVenda.centerOnScreen();
+		RegistroVenda.setResizable(false);
 		RegistroVenda.showAndWait();
 
 	}
@@ -216,6 +225,7 @@ public class Main extends Application {
 		RegistroFornecedor.initModality(Modality.WINDOW_MODAL);
 		RegistroFornecedor.setScene(scene4);
 		RegistroFornecedor.centerOnScreen();
+		RegistroFornecedor.setResizable(false);
 		RegistroFornecedor.showAndWait();
 
 	}
